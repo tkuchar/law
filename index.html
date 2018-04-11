@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> JML Assistant </title>
+	<meta charset="UTF-8" name="author" content="Tad Kuchar"></meta>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+	<link rel="SHORTCUT ICON" href="images/logo.ico">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css"></link>
+
+</head>
+<body>
+
+	<header> <span class="business-header"> JML LAW, APLC </span> <span class="address-header"> 21052 Oxnard Street, Los Angeles </span>
+	<span class="address-header"> Phone: 818.610.8800 </span> </header>
+
+	<section id="app-container">
+
+		<section class="app-section atty">
+
+			<h1 class="header-text"> Attorneys </h1>
+
+			<select class="drop-down-atty drop-down" data-bind="options: attys,
+								 optionsText: 'name',
+								 value: selectedAtty,
+								 optionsCaption: 'Choose an attorney...',
+								 event: { change: ">
+			</select>
+
+			<section id="display-area" data-bind="selectedAtty">
+				<p data-bind="html: selectedAtty() ? '<span> Bar Number: </span>' + selectedAtty().bar: ''"/>
+				<p data-bind="html: selectedAtty() ? '<span> Email: </span>' + selectedAtty().email : '' "/>
+				<p data-bind="html: selectedAtty() ? '<span> Team: </span>' + selectedAtty().team : ''"/>
+				<p data-bind="html: selectedAtty() ? '<span> USDC Central District: </span> ' + selectedAtty().central: ''"/>
+				<p data-bind="html: selectedAtty() ? '<span> Courtcall: </span>' + selectedAtty().courtcall : ''"/>
+				<!-- <p data-bind="text: selectedCourt() ? 'One Legal Support: ' + selectedCourt().OneLegal : ''"/>
+				<p data-bind="html: selectedCourt() ? '<span> Online Document Access: </span> ' + selectedCourt().docAccess: ''">-->
+				<p data-bind="html: selectedAtty() ? selectedAtty().blob : ''">
+			</section>
+
+		</section>
+
+		<section class="app-section courts">
+
+			<h1 class="header-text"> Courts </h1>
+
+			<select class="drop-down" data-bind="options: courts,
+								  optionsText: 'name',
+								  value: selectedCourt,
+								  optionsCaption: 'Choose a court...',
+								  event: { change: ">
+			</select>
+
+			<section id="display-area" data-bind="selectedCourt">
+				<p data-bind="html: selectedCourt() ? '<span> Civil Phone Number: </span>' + selectedCourt().phone: ''"/>
+				<p data-bind="html: selectedCourt() ? '<span> Civil Fax Filings: </span>' + selectedCourt().fax: ''"/>
+				<p data-bind="html: selectedCourt() ? '<span> Address:  </span>' + selectedCourt().addy: ''"/>
+				<p data-bind="html: selectedCourt() ? '<span> Operating Hours: </span>' + selectedCourt().hours: ''"/>
+				<p data-bind="html: selectedCourt() ? '<span> All-N-One Retainer: </span>' + selectedCourt().AttyService: ''"/>
+				<p data-bind="html: selectedCourt() ? '<span> One Legal Support: </span>' + selectedCourt().OneLegal : ''"/>
+				<p data-bind="html: selectedCourt() ? '<span> Online Document Access: </span>  ' + selectedCourt().docAccess: ''">
+				<p data-bind="html: selectedCourt() ? '<span> Motion Reservation: </span>  ' + selectedCourt().motionResv: ''">
+				<p data-bind="html: selectedCourt() ? selectedCourt().blob : ''">
+			</section>
+		</section>
+
+	<!-- Resources Module -->
+	<section class="useful-links">
+
+		<h1 class="header-text"> Resources </h1>
+
+		<select class="drop-down-filter" data-bind="options: filterList,
+								optionsText: $data,
+								value: selectedFilter,
+								optionsCaption: 'Choose a filter...',
+								event {change: ">
+		</select>
+
+			<ul data-bind="foreach: filteredLinks">
+				<li data-bind="html: url">
+				<li class="more_info"> More Info </li>
+				</li>
+			</ul>
+
+	</section>
+
+</section>
+
+	<footer> Developed by <a href="mailto:tad@jmllaw.com" style="color: orange; text-decoration: none">Tad Kuchar</a> </footer>
+
+	<script defer src="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
+	<script defer src="js/app.js"></script>
+</body>
+</html>

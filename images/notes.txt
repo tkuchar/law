@@ -1,0 +1,44 @@
+Font: OCR-A
+
+-
+
+How do I work?
+
+Sometimes I do not take responsiblity to do a task that is right in front of me. Instead I wait for another to ultimately do it for me - eg retrieving conformed papers that are sitting
+in the fax basket.
+
+I get easily distracted from a task by notes, emails, and other small things.
+
+I get irritated, despondent when presented with some simple tasks - eg seeing papers I have to serve.
+
+I get anxious when I hear people come around the corner.
+
+I work fast.
+
+I surf the internet.
+
+My desk is always dirty or cluttered.
+
+I listen to music.
+
+I don't drink water.
+
+I don't work after I return from lunch.
+
+
+-
+
+Modular Functions
+
+function behaviorMod (action, type) {
+	do something with input 'action' and 'type';
+}
+
+function whatDoIDo () {
+	run prioritize();
+	run behaviorMod(x, y);
+}
+
+function prioritize() {
+	what is important?;
+}
