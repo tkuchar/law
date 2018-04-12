@@ -121,16 +121,8 @@
 		background-color: rgba(250, 240, 230, .85);
 		box-shadow: 3px 3px 15px black;
 		text-align: center;
-		height: 52vh;
 		overflow-y: hidden;
 		}
-
-	.atty {
-	}
-
-	.courts {
-	}
-
 
 	.drop-down-atty {
 		appearance: none;
@@ -139,6 +131,7 @@
 
 	.useful-links {
 		width: 74%;
+		height: 35%;
 		background-color: #faf0e6e0;
 		box-shadow: 3px 3px 15px black;
 		text-align: center;
@@ -156,6 +149,7 @@
 
 	ul {
 		list-style-type: none;
+		overflow: hidden;
 	}
 
 	li {
