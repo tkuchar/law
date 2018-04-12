@@ -12,7 +12,6 @@
 
 	header {
 		background: linear-gradient(to right, #706a5e, #4f586a);
-		height: 12vh;
 	}
 
 	#app-container {
@@ -208,10 +207,13 @@
 	}
 
 	@media screen and (max-width: 600px) {
-		.app-section, .app-section, .useful-links {
+		.app-section, .useful-links {
 		width: 80%;
 		height: 80%;
-		font-size: 14px;
+		}
+
+		p {
+			font-size: 14px;
 		}
 
 		#app-container {
