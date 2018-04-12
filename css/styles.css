@@ -1,20 +1,20 @@
 
-	
+
 	* {
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
 	}
-	
+
 	body {
 		font-family: 'Open Sans Condensed', sans-serif;
 	}
-	
+
 	header {
 		background: linear-gradient(to right, #706a5e, #4f586a);
 		height: 12vh;
 	}
-	
+
 	#app-container {
 		height: 78.5vh;
 		padding: 10px;
@@ -23,28 +23,28 @@
 		flex-wrap: wrap;
 		background: url('../images/valley.jpg') fixed;
 		}
-	
+
 	.business-header {
 		font-size: 28px;
-		text-align: center; 
-		color: white; 
+		text-align: center;
+		color: white;
 		display: block;
 		letter-spacing: 5px;
 		padding-top: 10px;
 		animation: slideInLeftSlight 1s;
 		animation-fill-mode: backwards;
 	}
-	
+
 	.address-header {
 		font-size: 12px;
 		letter-spacing: 1px;
-		text-align: center; 
-		color: linen; 
+		text-align: center;
+		color: linen;
 		display: block;
 		animation: slideInRightSlight 1s;
 		animation-fill-mode: backwards;
 	}
-		
+
 	.drop-down {
 		background: url("https://image.flaticon.com/icons/svg/186/186326.svg") 92% / 8% no-repeat #6d6666;
 		color: white;
@@ -54,21 +54,21 @@
 		margin-top: 5px;
 		width: 60%;
 		}
-		
+
 	.drop-down:hover {
 		border: 1px solid black;
 	}
-		
-		
+
+
 	option {
 		color: white;
 		}
-		
+
 	p {
 		font-size: 18px;
 		padding: 2px;
 		}
-		
+
 	img {
 		height: 100px;
 		border: 1px solid black;
@@ -77,23 +77,23 @@
 		background-image: cover;
 		box-shadow: 3px 3px 3px grey;
 		}
-		
+
 	span {
 	font-weight: bold;
 	}
-	
+
 	.logo {
 		width: 100px;
 		height: 100px;
 		border: 0;
 		}
-		
+
 	.header-text {
 		font-size: 30px;
 		letter-spacing: 6.5px;
 		margin-bottom: 5px;
 		}
-		
+
 	footer {
 	height: 3.75vh;
 	background-color: #4f5867;
@@ -105,15 +105,15 @@
 	clip-path: polygon(0 0, 100% 100%, 100% 0, 0 0);
 	transition: all .5s;
 	border-top: .5px solid white;
-	
+
 	}
-	
+
 	footer:hover {
 		background-color: #284163d6;
 		transition: background-color 1s, clip-path .5s;
 		clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
 	}
-		
+
 	.app-section {
 		padding: 10px;
 		margin: 5px;
@@ -125,19 +125,19 @@
 		height: 52vh;
 		overflow-y: hidden;
 		}
-		
+
 	.atty {
 	}
-	
+
 	.courts {
 	}
 
-		
+
 	.drop-down-atty {
 		appearance: none;
 		background: url("https://image.flaticon.com/icons/svg/186/186333.svg") 95% / 8% no-repeat #6d6666;
 		}
-	
+
 	.useful-links {
 		width: 74%;
 		background-color: #faf0e6e0;
@@ -148,17 +148,17 @@
 		margin:5px;
 		background-color: rgba(250, 240, 230, .85);
 	}
-	
+
 	.drop-down-filter {
 		background: #6d6666;
 		color: white;
 		margin-bottom: 15px;
 	}
-	
+
 	ul {
 		list-style-type: none;
 	}
-		
+
 	li {
 		margin: 5px;
 		padding: 5px;
@@ -167,53 +167,54 @@
 		overflow-y: hidden;
 		transition: all .2s;
 	}
-	
+
 	li:hover {
 		box-shadow: 2px 2px 5px grey;
 		transform: translateY(2px);
 		transition: all .2s;
 	}
-	
+
 	a {
 		text-decoration: none;
 	}
-	
+
 	.more_info {
 		display: none;
 		text-decoration: none;
 	}
-	
+
 	@keyframes slideInLeftSlight {
 		0% {
 			opacity: 0;
 			transform: translateX(-100px);
 		}
-		
+
 		100% {
 			opacity: 1;
 			transform: translate(0);
 		}
 	}
-	
+
 	@keyframes slideInRightSlight {
 		0% {
 			opacity: 0;
 			transform: translateX(100px);
 		}
-		
+
 		100% {
 			opacity: 1;
 			transform: translate(0);
 		}
 	}
-	
+
 	@media screen and (max-width: 600px) {
 		.app-section, .app-section, .useful-links {
 		width: 80%;
+		height: 80%;
+		font-size: 14px;
 		}
-		
+
 		#app-container {
 			height: 100%;
 		}
 	}
-	
