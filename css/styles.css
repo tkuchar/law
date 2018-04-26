@@ -11,7 +11,8 @@
 	}
 
 	header {
-		background: linear-gradient(to right, #706a5e, #4f586a);
+		background-color: #284163d6;
+		border-bottom: 1.5px solid linen;
 	}
 
 	#app-container {
@@ -101,7 +102,6 @@
 	color: white;
 	padding: 10px;
 	z-index: -1;
-	clip-path: polygon(0 0, 100% 100%, 100% 0, 0 0);
 	transition: all .5s;
 	border-top: .5px solid white;
 
@@ -109,8 +109,7 @@
 
 	footer:hover {
 		background-color: #284163d6;
-		transition: background-color 1s, clip-path .5s;
-		clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+		transition: background-color .5s;
 	}
 
 	.app-section {
